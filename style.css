@@ -1,0 +1,52 @@
+body {
+    display: flex;
+}
+
+.rightPanel {
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+}
+
+.leftPanel {
+    width: 1600px;
+    height: 1000px;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 524px;
+    height: 150px;
+    top: 15rem;
+    background-color: rgb(12, 12, 12, 0.3);
+}
+
+.odinLogo {
+    width: 80px;
+    height: 90px;
+    /* position: absolute; */
+}
+
+@font-face {
+    font-family: my-cool-font;
+    src: url(Norse-Bold.otf);
+  }
+
+.myrdaleLogo {
+    font-family: my-cool-font, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 50px;
+    /* position: absolute; */
+}
+
+
+.cowsImage {
+    object-fit: cover;
+    width: 100%;
+    height: 1000px;
+}
+
+
