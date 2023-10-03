@@ -9,22 +9,48 @@
 <body>
     <div class="leftPanel">
         <img class="cowsImage" src="https://images.unsplash.com/photo-1566040924976-f837330d1a5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Cows on a field of grass">
-            <div class="logoContainer">
-                <img class="odinLogo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin logo">
-                <div class="myrdaleLogo">Myrdale</div>
-            </div>
+        <div class="logoContainer">
+            <img class="odinLogo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin logo">
+            <div class="myrdaleLogo">MYRDALE</div>
+        </div>
+        <div class="imageCredits">Photo by John Doe on <a href="https://unsplash.com/photos/UQJf6y91zZs">Unsplash</a></div>
     </div>
     <div class="rightPanel">
         <div class="upper">
             <p>The Myrdale is Toronto's first and largest private ranch offering year-round activities including horseback riding, tennis, walking trails, snowshoeing, and indoor golf simulators. With over 200 acres of land, the Myrdale remains a place where families and friends can enrich their lives, spend valuable time together and share memorable moments.</p>
-            <p>Join the waitlist to Myrdale.</p>
+            <p>You can sign up below for our waitlist.</p>
         </div>
         <div class="middle">
-            Some form here
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Join the waitlist to Myrdale.</legend>
+                        <div class="left">
+                            <label for="first_name">First Name:</label>
+                            <input type="text" id="first_name" name="first_name">
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+
+                        <div class="right">
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" id="last_name" name="last_name">
+
+                            <label for="phone_number">Phone Number:</label>
+                            <input type="number" id="phone_number" name="phone_number">
+
+                            <label for="confirm">Confirm Password:</label>
+                            <input type="password" id="confirm" name="confirm">
+                        </div>
+                </fieldset>
+            </form>
         </div>
         <div class="bottom">
-            <button>Submit</button>
-            <!-- already a member? Sign in (link) -->
+            <button type="submit">Submit</button>
+            <div class="login">Already a member? Log in here</div>
         </div>
     </div>
     

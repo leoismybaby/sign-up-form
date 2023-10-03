@@ -5,12 +5,15 @@ body {
 .rightPanel {
     display: flex;
     flex-direction: column;
-    border: 1px black solid;
+    width: 700px;
+    flex-shrink: 0;
 }
 
 .leftPanel {
     width: 1600px;
-    height: 1000px;
+    display: flex;
+    position: relative;
+    max-width: 555px;
 }
 
 .logoContainer {
@@ -18,35 +21,126 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 524px;
+    min-width: 555px;
     height: 150px;
-    top: 15rem;
+    top: 13rem;
     background-color: rgb(12, 12, 12, 0.3);
 }
 
 .odinLogo {
-    width: 80px;
-    height: 90px;
-    /* position: absolute; */
+    width: 70px;
+    height: 80px;
+    position: relative;
+    right: 5px
 }
 
-@font-face {
-    font-family: my-cool-font;
-    src: url(Norse-Bold.otf);
-  }
 
 .myrdaleLogo {
-    font-family: my-cool-font, 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
     color: white;
-    font-size: 50px;
-    /* position: absolute; */
+    font-size: 60px;
+    font-stretch: expanded;
+    letter-spacing: 1px;
+    opacity: 0.85;
 }
 
 
 .cowsImage {
     object-fit: cover;
     width: 100%;
-    height: 1000px;
+    height: 1200px;
+    min-width: 555px;
+}
+
+.imageCredits {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: smaller;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 2rem;
+    right: 11rem;
+}
+
+a {
+    color: white;
+}
+
+.middle {
+    background-color: white;
+    padding: 50px;
+    box-shadow: 0 4px 2px -2px gray
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0 10px;
+}
+
+label {
+    font-size: 1.0em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+}
+
+input, label {
+    display: block;
+    margin: 5px;
+}
+
+.right {
+    margin-left: 10px;
+}
+
+.left {
+    margin-left: -15px;
+}
+
+legend {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    margin-left: -15px;
+    margin-bottom: 15px;
+}
+
+.upper, .bottom {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    padding-left: 50px;
+    padding-right: 80px;
+    background-color: rgb(245, 240, 240, 0.5);
+}
+
+.upper {
+    padding-top: 150px;
+}
+
+.bottom {
+    padding-top: 50px;
+    position: relative;
+    bottom: 0;
+    padding-bottom: 308px;
+}
+
+button {
+    background-color: rgb(28, 56, 47);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 2px;
+}
+
+.login {
+    font-size: smaller;
+    padding-top: 20px;
+    
 }
 
 
