@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myrdale Ranch</title>
     <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="leftPanel">
@@ -26,24 +27,24 @@
                     <legend>Join the waitlist to Myrdale.</legend>
                         <div class="left">
                             <label for="first_name">First Name:</label>
-                            <input type="text" id="first_name" name="first_name">
+                            <input type="text" id="first_name" name="first_name" required>
 
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" required>
 
                             <label for="password">Password:</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" required>
                         </div>
 
                         <div class="right">
                             <label for="last_name">Last Name:</label>
-                            <input type="text" id="last_name" name="last_name">
+                            <input type="text" id="last_name" name="last_name" required>
 
                             <label for="phone_number">Phone Number:</label>
-                            <input type="number" id="phone_number" name="phone_number">
+                            <input type="number" id="phone_number" name="phone_number" required>
 
                             <label for="confirm">Confirm Password:</label>
-                            <input type="password" id="confirm" name="confirm">
+                            <input type="password" id="confirm" name="confirm" required>
                         </div>
                 </fieldset>
             </form>

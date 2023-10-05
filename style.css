@@ -134,7 +134,6 @@ button {
     background-color: rgb(28, 56, 47);
     color: white;
     padding: 10px 10px;
-    border-radius: 2px;
 }
 
 .login {
@@ -143,4 +142,10 @@ button {
     
 }
 
+button:hover {
+    background-color: rgb(64, 112, 97);
+}
 
+input:hover {
+    background-color: rgb(236, 236, 236);
+}
